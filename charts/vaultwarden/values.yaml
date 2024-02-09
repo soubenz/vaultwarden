@@ -429,7 +429,7 @@ logging:
   ##
   logFile: ""
   ## activate extended logging
-  extended_logging: false
+  extended_logging: true
 
 ## @section Extra Configuration
 ##

@@ -424,7 +424,7 @@ attachments: {}
 logging:
   ## @param logging.logLevel Specify the log level
   ##
-  logLevel: ""
+  logLevel: "debug"
   ## @param logging.logFile Log to a file
   ##
   logFile: ""

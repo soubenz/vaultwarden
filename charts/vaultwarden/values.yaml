@@ -428,6 +428,8 @@ logging:
   ## @param logging.logFile Log to a file
   ##
   logFile: ""
+  ## activate extended logging
+  extended_logging: false
 
 ## @section Extra Configuration
 ##

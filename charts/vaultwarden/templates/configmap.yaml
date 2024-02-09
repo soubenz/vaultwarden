@@ -38,7 +38,7 @@ data:
   {{- end }}
   ROCKET_ADDRESS: {{ .Values.rocket.address | quote }}
   ROCKET_PORT: {{ .Values.rocket.port | quote }}
-  ROCKET_WORKERS: {{ .Values.rocket.workers | quote }}
+  
   SHOW_PASSWORD_HINT: {{ .Values.showPassHint | quote }}
   SIGNUPS_ALLOWED: {{ .Values.signupsAllowed | quote }}
   INVITATIONS_ALLOWED: {{ .Values.invitationsAllowed | quote }}
@@ -49,6 +49,8 @@ data:
   WEB_VAULT_ENABLED: {{ .Values.webVaultEnabled | quote }}
   {{- if .Values.logging.logFile }}
   LOG_FILE: {{ .Values.logging.logFile | quote }}
+  {{- end }}
+  {{- if .Values.logging.extended_logging }}
   {{- end }}
   {{- if .Values.logging.logLevel }}
   LOG_LEVEL: {{ .Values.logging.logLevel | quote }}

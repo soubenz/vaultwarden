@@ -51,6 +51,7 @@ data:
   LOG_FILE: {{ .Values.logging.logFile | quote }}
   {{- end }}
   {{- if .Values.logging.extended_logging }}
+  EXTENDED_LOGGING: {{ .Values.extended_logging  }}
   {{- end }}
   {{- if .Values.logging.logLevel }}
   LOG_LEVEL: {{ .Values.logging.logLevel | quote }}
